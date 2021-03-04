@@ -23,7 +23,7 @@
 <?php
 #services mysql start
 $site_path_var = $_SERVER["MYSQL_USER"];
-echo $site_path_var;
+echo "deez nuts"
     $conn = new mysqli($_ENV["MYSQL_IP_ADDRESS"], $_ENV["MYSQL_USER"], 
 	$_ENV["MYSQL_PASSWORD"],$_ENV["MYSQL_DATABASE"]);
 	
