@@ -22,7 +22,7 @@
 
 <?php
 #services mysql start
-echo "deez nuts";
+
     $conn = new mysqli($_ENV["MYSQL_IP_ADDRESS"], $_ENV["MYSQL_USER"], 
 	$_ENV["MYSQL_PASSWORD"],$_ENV["MYSQL_DATABASE"]);
 	
