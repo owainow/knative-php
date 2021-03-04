@@ -21,7 +21,7 @@
 <body bgcolor="#c2c2a3">
 
 <?php
-
+phpinfo();
 #services mysql start
 
     $conn = new mysqli("10.128.2.235", "oosborne", 
