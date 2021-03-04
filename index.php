@@ -24,35 +24,32 @@
 
 #services mysql start
 
-    $conn = new mysqli("127.0.0.1", "", 
-	"", "");
+    $conn = new mysqli("10.128.2.235", "oosborne", 
+	"redhat",);
 	
 	if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM Product_Stock";
+$sql = "SELECT * FROM demotable";
 $result = $conn->query($sql);
 
 	{
 echo "<table class = 'table'>
 				<tr>
-					<th>Product ID</th>
-					<th>Product Name</th>
-					<th>Product Description</th>
-					<th>Stock Amount</th>
-					<th>Function</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
 				</tr>";
 	
 		while($row = mysqli_fetch_array($result))
 		{ 
 			echo "</tr>";
-				echo "<td>" . $row["Product_ID"] . "</td>";
-				echo "<td>" . $row["Product_Name"]."</td>";
-				echo "<td>" . $row["Product_Description"]."</td>";
-				echo "<td>" . $row["Product_Stock"]."</td>";
+				echo "<td>" . $row["firstname"] . "</td>";
+				echo "<td>" . $row["lastname"]."</td>";
+				echo "<td>" . $row["email"]."</td>";
 				echo "<td><form method=get>
-                    <input name=id type=hidden value='".$row['Product_ID']."';>
+                    <input name=id type=hidden value='".$row['personid']."';>
                     <input type=submit name=submit value=Adjust Stock>
                     </form>";
 			    echo "</tr>";
