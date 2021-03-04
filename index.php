@@ -22,9 +22,10 @@
 
 <?php
 #services mysql start
-
-    $conn = new mysqli("10.128.2.31", "oosborne", 
-	"redhat","sampledb");
+$site_path_var = $_SERVER["MYSQL_USER"];
+echo $site_path_var;
+    $conn = new mysqli($_ENV["MYSQL_IP_ADDRESS"], $_ENV["MYSQL_USER"], 
+	$_ENV["MYSQL_PASSWORD"],$_ENV["MYSQL_DATABASE"]);
 	
 	if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
