@@ -25,7 +25,7 @@
 #services mysql start
 
     $conn = new mysqli("10.128.2.235", "oosborne", 
-	"redhat",);
+	"redhat","sampledb");
 	
 	if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
