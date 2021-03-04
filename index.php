@@ -23,7 +23,7 @@
 <?php
 #services mysql start
 
-    $conn = new mysqli("10.128.2.235", "oosborne", 
+    $conn = new mysqli("10.128.2.31", "oosborne", 
 	"redhat","sampledb");
 	
 	if ($conn->connect_error) {
