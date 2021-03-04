@@ -8,7 +8,7 @@
 <table class = 'u-pull-left'>
 <th><a href = "Dashboard.php" > Home </a></th>
 <th><a href = "Devices.php" > Devices </a></th>
-<th><a href = "Index.php" > Stock </a></th>
+<th><a href = "index.php" > Stock </a></th>
 </table>
 </div>
 
