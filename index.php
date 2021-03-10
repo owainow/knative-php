@@ -36,19 +36,27 @@ $result = $conn->query($sql);
 	{
 echo "<table class = 'table'>
 				<tr>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Email</th>
+					<th>Product_Name</th>
+					<th>Storage_Amount</th>
+					<th>Service_Provider</th>
+					<th>Phone_Colour</th>
+					<th>Camera</th>
+					<th>Product_Description</th>
+					<th>Product_Stock</th>
 				</tr>";
 	
 		while($row = mysqli_fetch_array($result))
 		{ 
 			echo "</tr>";
-				echo "<td>" . $row["firstname"] . "</td>";
-				echo "<td>" . $row["lastname"]."</td>";
-				echo "<td>" . $row["email"]."</td>";
+				echo "<td>" . $row["Product_Name"] . "</td>";
+				echo "<td>" . $row["Storage_Amount"]."</td>";
+				echo "<td>" . $row["Service_Provider"]."</td>";
+				echo "<td>" . $row["Phone_Colour"]."</td>";
+				echo "<td>" . $row["Camera"]."</td>";
+				echo "<td>" . $row["Product_Description"]."</td>";
+				echo "<td>" . $row["Product_Stock"]."</td>";
 				echo "<td><form method=get>
-                    <input name=id type=hidden value='".$row['personid']."';>
+                    <input name=id type=hidden value='".$row['Product_ID']."';>
                     <input type=submit name=submit value=Adjust Stock>
                     </form>";
 			    echo "</tr>";
