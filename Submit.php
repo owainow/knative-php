@@ -1,5 +1,5 @@
 <header>
-<meta http-equiv="refresh" content="0; url=".$_SERVER['HTTP_REFERER']." />
+<meta http-equiv="refresh" content="; url=".$_SERVER['HTTP_REFERER']." />
 </header>
 
 <?php
@@ -9,6 +9,4 @@ $_ENV["MYSQL_PASSWORD"],$_ENV["MYSQL_DATABASE"]);
 //Sending form data to sql db.
 mysqli_query($conn, "INSERT INTO products(Product_Name,Stroage_Amount,Service_Provider,Phone_Colour, Camera,Product_Description)
 	VALUES('$_POST[ProuctName]', '$_POST[StorageAmount]', '$_POST[ServiceProvider]', '$_POST[PhoneColour]', '$_POST[Camera]', '$_POST[EnterDescription]')");
-index.php
-
 ?>
