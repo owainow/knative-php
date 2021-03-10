@@ -7,5 +7,5 @@ CREATE TABLE `products` (
   `Camera` BOOLEAN NOT NULL DEFAULT '0',
   `Product_Description` varchar(100),
   `Product_Stock` int NOT NULL DEFAULT '0',
-  PRIMARY KEY (`ProductID`),
+  PRIMARY KEY (`ProductID`)
 );
