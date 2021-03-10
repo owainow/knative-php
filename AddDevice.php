@@ -20,8 +20,8 @@
 
 <?php
 
- $conn = new mysqli("127.0.0.1", "", 
-	"", "");
+$conn = new mysqli($_ENV["MYSQL_IP_ADDRESS"], $_ENV["MYSQL_USER"], 
+	$_ENV["MYSQL_PASSWORD"],$_ENV["MYSQL_DATABASE"]);
 	
 ?>
 <form action="Submit.php" method = "post">
@@ -36,6 +36,7 @@
         <option value="16G">16G</option>
         <option value="32G">32G</option>
         <option value="64G">64G</option>
+        <option value="128G">128G</option>
       </select> 
 	</div>
     <div class="two columns">

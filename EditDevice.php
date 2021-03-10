@@ -24,7 +24,7 @@
 	"", "");
 	
   $id = $_POST['id'];
-  $sql = "SELECT * FROM Product_Table WHERE Product_ID =$id;";
+  $sql = "SELECT * FROM products WHERE Product_ID =$id;";
   $result = $conn->query($sql);
 
 	

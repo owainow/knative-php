@@ -25,8 +25,8 @@
 
 #services mysql start
 
-    $conn = new mysqli("127.0.0.1", "", 
-	"", "");
+$conn = new mysqli($_ENV["MYSQL_IP_ADDRESS"], $_ENV["MYSQL_USER"], 
+$_ENV["MYSQL_PASSWORD"],$_ENV["MYSQL_DATABASE"]);
 	
 	if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -34,28 +34,27 @@
 
 if(isset($_POST['submit']) && isset($_POST['id']) && !empty($_POST['id'])) {
   $id = $_POST['id'];
-  $sql = mysqli_query($conn, "DELETE FROM Product_Table WHERE Product_ID =$id;");
+  $sql = mysqli_query($conn, "DELETE FROM products WHERE Product_ID =$id;");
 
   if(!$sql) {
     echo ("Could not delete rows" .mysql_error());
   }
 }
 
-$sql = "SELECT * FROM Product_Table";
+$sql = "SELECT * FROM products";
 $result = $conn->query($sql);
 
 	{
 echo "<table class = 'u-full-width'>
-				<tr>
-					<th>Product ID</th>
-					<th>Product Name</th>
-					<th>Storage Amount</th>
-					<th>Service Provider</th>
-					<th>Phone Colour</th>
-					<th>Camera</th>
-					<th>Product Description</th>
-					<th>Functions</th>
-				</tr>";
+                 <tr>
+                 <th>Product Name</th>
+                 <th>Storage Amount</th>
+                 <th>Service Provider</th>
+                 <th>Phone Colour</th>
+                 <th>Camera</th>
+                 <th>Product Description</th>
+                 <th>Product Stock</th>
+                 </tr>";
 	
 		while($row = mysqli_fetch_array($result))
 		{ 

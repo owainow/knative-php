@@ -36,13 +36,13 @@ $result = $conn->query($sql);
 	{
 echo "<table class = 'table'>
 				<tr>
-					<th>Product_Name</th>
-					<th>Storage_Amount</th>
-					<th>Service_Provider</th>
-					<th>Phone_Colour</th>
+					<th>Product Name</th>
+					<th>Storage Amount</th>
+					<th>Service Provider</th>
+					<th>Phone Colour</th>
 					<th>Camera</th>
-					<th>Product_Description</th>
-					<th>Product_Stock</th>
+					<th>Product Description</th>
+					<th>Product Stock</th>
 				</tr>";
 	
 		while($row = mysqli_fetch_array($result))
