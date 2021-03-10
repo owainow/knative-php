@@ -1,5 +1,5 @@
 <header>
-<meta http-equiv="refresh" content="; url=".$_SERVER['HTTP_REFERER']." />
+<meta http-equiv="refresh" content="0; url='.$_SERVER['HTTP_REFERER'].'" />
 </header>
 
 <?php
