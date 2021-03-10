@@ -30,7 +30,7 @@
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM demotable";
+$sql = "SELECT * FROM products";
 $result = $conn->query($sql);
 
 	{
