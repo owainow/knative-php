@@ -4,3 +4,7 @@ INSERT INTO products (Product_ID,Product_Name,Storage_Amount,Service_Provider,Ph
  (3,'Samsung Galaxy 8', '64GB', 'O2', 'Silver', '1', 'The new Samsung Galaxy 8 in Silver', 100),
  (4,'Goolge Pixel 4', '200GB', 'EE', 'Black', '1', 'The new Google Pixel on EE', 28);
   
+INSERT INTO users (User_ID,User_First_Name,User_Second_Name,User_Email,User_Password)
+ VALUES (1,'Owain', 'OW', 'Owain@localhost.com', 'redhat'),
+ (2,'Sam', 'Mburu', 'Sam@localhost.com', 'redhat'),
+ (3,'Admin', 'Admin', 'Admin@localhost.com', 'redhat');
