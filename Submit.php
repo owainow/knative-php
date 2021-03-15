@@ -1,6 +1,5 @@
 <header>
-<meta http-equiv="refresh"
-   content="0; url=Dashboard.php">
+<meta http-equiv="refresh" content="0; url='Dashboard.php'" />
 </header>
 
 <?php
