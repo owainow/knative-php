@@ -1,5 +1,5 @@
 <header>
-<meta http-equiv="refresh" content="0; url=http://knative-php-index-knative-demo.apps.cluster-b41e.b41e.example.opentlc.com/" />
+<meta http-equiv="refresh" content="60; url=http://knative-php-index-knative-demo.apps.cluster-b41e.b41e.example.opentlc.com/" />
 </header>
 
 <?php
