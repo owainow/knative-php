@@ -1,6 +1,6 @@
 <header>
 <meta http-equiv="refresh"
-   content="0; url=$_ENV[DASH_URL]">
+   content="0; url=Dashboard.php">
 </header>
 
 <?php
